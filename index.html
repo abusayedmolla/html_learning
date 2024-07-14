@@ -6,12 +6,18 @@
     <title>Layout Design</title>
     <style>
         .css-container{
-            background-color: blueviolet;
+            background-color: rgb(32, 28, 37);
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: column-reverse;
+           /* flex-wrap: wrap;
+            flex-direction: column-reverse; */
+            flex-flow: wrap row;
+            justify-content: space-between;
+            height: 250px;
+            align-items: center;
+            
+
         }
-        .css-container{
+        .css-container>div{
             background-color: bisque;
             font-size: larger;
             margin: 15px;
@@ -21,11 +27,11 @@
 </head>
 <body>
     <div class="css-container">
-        <div>Sayed</div>
-        <div>Siamul</div>
-        <div>Hasan</div>
-        <div>Solayman</div>
-        <div>Mahmud</div>
+        <div class="div1" style="order: 1";>Sayed</div>
+        <div class="div2" style="order: 3;">Siamul</div>
+        <div class="div3" style="order: 4;">Hasan</div>
+        <div class="div4" style="order: 2;">Solayman</div>
+        <div class="div5" style="order: 5;">Mahmud</div>
 
     </div>
 </body>
